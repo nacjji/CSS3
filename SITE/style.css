@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+
+#container {
+
+    margin: 0;  /* 화면 위쪽 중앙에 배치 */
+    width: 1200px;
+
+}
+/* 헤더영역 */
+header {
+    width:100%;
+    height:100px;
+    background-color: rgb(3, 49, 73)
+}
+
+/* 로고영역 */
+
+#logo {
+    float: left;
+    width:250px;
+    height: 100px;
+}
+
+nav{
+    float : right;
+    width: 900px;
+    height:100px;
+
+}
+
+ul{
+    list-style: none;
+}
+#topMenu{
+    height: 60px;
+    font-size: 20px;
+}
+
+#topMenu > li{
+    float: left;
+    position: relative;
+}
+
+#topMenu > li > ul{
+    display: none;
+    position: absolute;
+    width: 160px;
+    background-color: rgba(255,255,255,0.6);
+    padding-left: 25px;
+}
+
+#topMenu > li > a{
+    display: block;
+    color: white;
+    font-weight: 600px;
+    padding: 20px 30px;
+}
+
+#topMenu > li > a:hover{
+    color: black;
+}
+
+#topMenu > li:hover ul{
+    display: block;
+    z-index: 10;
+}
+
+#topMenu > li > ul > li > a {
+    font-size:14px;
+    margin: 5px;
+    color: black;
+}
+
+#topMenu > li  > ul > li > a:hover{
+    color:white;
+}
+
+#slideShow{
+    width: 100%;
+    overflow:hidden;
+    height: 300px;
+
+}
+#contents{
+    width: 100%;
+    height: 300px;
+}
+
+#tabMenu{
+    float: left;
+    width: 600px;
+    height: 100%;
+    background-color: rgb(79, 79, 124);
+}
+
+#links{
+    float: left;
+    width: 600px;
+    height: 100%;
+    background-color: rgb(60, 195, 89);
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color:gray;
+}
+
+#logo h1{
+    font-family: 'Rubik Mono One', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+}
+
