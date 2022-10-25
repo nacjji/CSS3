@@ -92,21 +92,253 @@ ul{
     float: left;
     width: 600px;
     height: 100%;
-    background-color: rgb(79, 79, 124);
+    background-color: rgb(173, 196, 215);
 }
+
+#gallary ul li{
+    padding: 5px;
+}
+
+#tabMenu input[type="radio"]{
+    display: none;
+}
+
+#tabMenu label{
+    display: inline-block;
+    margin: 0 0;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(95, 95, 135);
+    border: 1px solid transparent;
+}
+
+#tabMenu label:hover{
+    color: rgb(0, 0, 0);
+    cursor:pointer;
+    background-color: rgb(133, 161, 184);
+}
+
+#tabMenu input:checked + label{
+    color: rgb(0, 0, 0);
+}
+
+.tabContent{
+    display: none;
+    padding-top: 5px;
+    border-top: 1px solid rgb(133, 161, 184);
+}
+
+
+#notice ul li{
+    font-size: 16px;
+    line-height: 2.5;
+}
+
+#tab1:checked ~ #notice,
+#tab2:checked ~ #gallary{
+    display: block;
+}
+
+#gallary ul li{
+    display: inline;
+    font-size: 16px;
+    line-height: 2.5;
+    padding: 12px;
+}
+
+#tabMenu img{
+    width: 100px;
+    display: block-inline;
+}
+
+
+
+
+
+
+
+
+
+
+#tabMenu2{
+    float: left;
+    width: 600px;
+    height: 100%;
+    background-color: rgb(173, 196, 215);
+}
+
+#bus ul li{
+    padding: 5px;
+}
+
+#tabMenu2 input[type="radio"]{
+    display: none;
+}
+
+#tabMenu2 label{
+    display: inline-block;
+    margin: 0 0;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(95, 95, 135);
+    border: 1px solid transparent;
+}
+
+#tabMenu2 label:hover{
+    color: rgb(0, 0, 0);
+    cursor:pointer;
+    background-color: rgb(133, 161, 184);
+}
+
+#tabMenu2 input:checked + label{
+    color: rgb(0, 0, 0);
+}
+
+.tabContent2{
+    display: none;
+    padding-top: 5px;
+    border-top: 1px solid rgb(133, 161, 184);
+}
+
+
+#air ul li{
+    font-size: 16px;
+    line-height: 2.5;
+}
+
+#tab3:checked ~ #air,
+#tab4:checked ~ #bus{
+    display: block;
+}
+
+#bus ul li{
+    font-size: 16px;
+    line-height: 2.5;
+}
+
+#tabMenu2 img{
+    width: 100px;
+    display: block-inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
 
 #links{
     float: left;
     width: 600px;
     height: 100%;
-    background-color: rgb(60, 195, 89);
+    background-color: rgb(173, 196, 215);
 }
+
+#airo ul li{
+    padding: 5px;
+
+}
+
+#links input[type="radio"]{
+    display: none;
+}
+
+#links label{
+    display: inline-block;
+    margin: 0 0;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(95, 95, 135);
+    border: 1px solid transparent;
+}
+
+#links label:hover{
+    color: rgb(0, 0, 0);
+    cursor:pointer;
+    background-color: rgb(133, 161, 184);
+}
+
+#links input:checked+label{
+    color: rgb(0, 0, 0);
+}
+
+.linkContent{
+    display: none;
+    padding-top: 5px;
+    border-top: 1px solid rgb(133, 161, 184);
+}
+
+
+#airo ul li{
+    font-size: 16px;
+    line-height: 2.5;
+}
+
+#link1:checked ~ #airo,
+#link2:checked ~ #bus,
+#link3:checked ~ #walk{
+    display: block;
+}
+
+
+#bus ul li{
+    display: inline;
+    font-size: 16px;
+    line-height: 2.5;
+    padding: 12px;
+} */
 
 footer{
     width: 100%;
     height: 100px;
-    background-color:gray;
+    border-top: 2px solid rgb(95, 133, 183);
 }
+
+#bottomMenu{
+    width: 100%;
+    height: 20px;
+    
+}
+
+#bottomMenu ul{
+    margin-top: 5px;
+    position: relative;  /*부모요소 만들기*/
+}
+
+#bottomMenu ul li{
+    float:left;
+    padding:5px 20px;
+    color: gray;
+    border-right: 1px solid rgb(190, 188, 188);
+}
+
+#bottomMenu ul li:last-child{
+    border-right:none;
+}
+
+#bottomMenu ul li a,
+#bottomMenu ul li a:visited{
+    color: rgb(94, 92, 92);
+}
+#sns{
+    position: absolute;
+    right: 0;
+}
+
+#sns ul li{
+    border:none
+}
+
 
 #logo h1{
     font-family: 'Rubik Mono One', sans-serif;
